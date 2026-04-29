@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PivotIR — per-investigation workspaces (large, ephemeral, regenerable)
+workspace/
+*.duckdb
+*.duckdb.wal
+*.db-journal
+
+# Per-investigation receipts/state inside workspaces
+**/ledger.jsonl
+**/state.sqlite
+
+# Tool outputs inside workspaces (regenerable from raw evidence)
+**/outputs/*
+!**/outputs/.gitkeep
+
+# Sample evidence — kept out of git by default; large binary forensic artifacts
+samples/**/evidence/*
+!samples/**/evidence/.gitkeep
+!samples/**/evidence/README.md
+
+# Local-only / secrets
+*.local
+.env
+.env.local
